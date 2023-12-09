@@ -7,4 +7,11 @@ return {
       },
     },
   },
+  keys = {
+    {
+      "S",
+      mode = { "n", "o" },
+      false,
+    },
+  },
 }
