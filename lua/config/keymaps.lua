@@ -17,3 +17,6 @@ vim.keymap.set("n", "N", "Nzzzv")
 
 vim.keymap.set("n", "<leader>z", "<cmd> ZenMode<CR>", { silent = true })
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+
+vim.keymap.set("n", "<leader>b<", "<cmd> BufferLineMovePrev<CR>", { silent = true })
+vim.keymap.set("n", "<leader>b>", "<cmd> BufferLineMoveNext<CR>", { silent = true })
