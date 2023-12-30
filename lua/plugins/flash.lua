@@ -10,7 +10,7 @@ return {
   keys = {
     {
       "S",
-      mode = { "n", "o" },
+      mode = { "n", "o", "v", "x" },
       false,
     },
   },
