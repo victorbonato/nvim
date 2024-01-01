@@ -15,8 +15,8 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
-vim.keymap.set("n", "<leader>z", "<cmd> ZenMode<CR>", { silent = true })
+vim.keymap.set("n", "<leader>z", "<cmd> NoNeckPain<CR>", { silent = true })
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
-vim.keymap.set("n", "<leader>b<", "<cmd> BufferLineMovePrev<CR>", { silent = true })
-vim.keymap.set("n", "<leader>b>", "<cmd> BufferLineMoveNext<CR>", { silent = true })
+vim.keymap.set("n", "<leader>bh", "<cmd> BufferLineMovePrev<CR>", { silent = true })
+vim.keymap.set("n", "<leader>bl", "<cmd> BufferLineMoveNext<CR>", { silent = true })
