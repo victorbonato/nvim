@@ -46,3 +46,8 @@ keymap.set("n", "<C-w><left>", "<C-w><")
 keymap.set("n", "<C-w><right>", "<C-w>>")
 keymap.set("n", "<C-w><up>", "<C-w>+")
 keymap.set("n", "<C-w><down>", "<C-w>-")
+
+-- prompt for a refactor to apply when the remap is triggered
+vim.keymap.set({ "n", "x" }, "<leader>rr", function()
+  require("refactoring").select_refactor()
+end)
