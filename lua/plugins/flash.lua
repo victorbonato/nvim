@@ -1,17 +1,22 @@
 return {
-  "folke/flash.nvim",
-  opts = {
-    modes = {
+  {
+    enabled = false,
+    "folke/flash.nvim",
+    ---@type Flash.Config
+    opts = {
       search = {
-        enabled = false,
+        forward = true,
+        multi_window = false,
+        wrap = false,
+        incremental = true,
       },
     },
-  },
-  keys = {
-    {
-      "S",
-      mode = { "n", "o", "v", "x" },
-      false,
+    keys = {
+      {
+        "S",
+        mode = { "n", "o", "v", "x" },
+        false,
+      },
     },
   },
 }

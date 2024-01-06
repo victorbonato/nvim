@@ -5,6 +5,9 @@ return {
       "windwp/nvim-autopairs",
       opts = {},
     },
+    keys = {
+      { "<CR>" },
+    },
     opts = function()
       local cmp = require("cmp")
       local cmp_autopairs = require("nvim-autopairs.completion.cmp")
