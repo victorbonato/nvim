@@ -7,13 +7,22 @@ return {
       opts = {},
     },
     keys = {
-      { "<CR>" },
+      {
+        "<C-y>",
+        function()
+          require("cmp").mapping.confirm({ select = true })
+        end,
+      },
     },
     opts = function(_, opts)
       local cmp = require("cmp")
       local cmp_autopairs = require("nvim-autopairs.completion.cmp")
       cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
       table.insert(opts.sources, { name = "emoji" })
+      -- Disable ENTER completion
+      opts.mapping = cmp.mapping.preset.insert(vim.tbl_deep_extend("force", opts.mapping, {
+        ["<CR>"] = vim.NIL,
+      }))
     end,
   },
 }
