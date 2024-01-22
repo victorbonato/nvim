@@ -20,9 +20,9 @@ return {
       cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
       table.insert(opts.sources, { name = "emoji" })
       -- Disable ENTER completion
-      opts.mapping = cmp.mapping.preset.insert(vim.tbl_deep_extend("force", opts.mapping, {
+      opts.mapping = vim.tbl_deep_extend("force", opts.mapping, {
         ["<CR>"] = vim.NIL,
-      }))
+      })
     end,
   },
 }

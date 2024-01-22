@@ -12,6 +12,8 @@ return {
         "javascript",
         "json",
         "jsonc",
+        "nim",
+        "prisma",
         "rust",
         "go",
         "scss",
