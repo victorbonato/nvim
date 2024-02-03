@@ -5,6 +5,9 @@ return {
     name = "catppuccin",
     opts = {
       transparent_background = true,
+      custom_highlights = {
+        CursorLine = { bg = "NONE" },
+      },
       integrations = {
         aerial = true,
         alpha = true,
