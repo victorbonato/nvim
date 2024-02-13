@@ -1,6 +1,3 @@
-local discipline = require("victor.discipline")
-discipline.cowboy()
-
 local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
 
@@ -51,3 +48,10 @@ keymap.set("n", "<C-w><down>", "<C-w>-")
 vim.keymap.set({ "n", "x" }, "<leader>rr", function()
   require("refactoring").select_refactor()
 end)
+
+-- greatest remap ever
+vim.keymap.set("x", "<leader>p", [["_dP]])
+
+-- next greatest remap ever : asbjornHaland
+vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
+vim.keymap.set("n", "<leader>Y", [["+Y]])

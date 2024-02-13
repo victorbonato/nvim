@@ -1,6 +1,6 @@
 return {
   {
-    "https://github.com/nvim-treesitter/nvim-treesitter",
+    "https://github.com/nvim-treesitter/nvim-treesitter.git",
     build = ":TSUpdate",
     dependencies = {
       -- Add nvim-ts-autotag
