@@ -17,6 +17,8 @@ return {
         "javascript",
         "json",
         "jsonc",
+        "markdown",
+        "markdown_inline",
         "nim",
         "prisma",
         "rust",
